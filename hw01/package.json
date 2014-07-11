@@ -1,0 +1,7 @@
+{
+	"name": "minDB",
+	"description": "2014 02 Database Adv hw01",
+	"devDependencies": {
+		"hashmap": "*"
+	}
+}
