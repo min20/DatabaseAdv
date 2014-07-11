@@ -11,6 +11,8 @@ search("1510130000001");
 search("2507100050000");
 insert("9406201234567,POPPI,01063710168,경기도 성남시 분당구 야탑동");
 search("9406201234567");
+insert("9406201234567,HEHE,01012345678,대한민국 어딘가");
+search("9406201234567");
 
 // MAIN END
 
@@ -43,6 +45,10 @@ function dataToHashMap(rawRow) {
 }
 
 function insert(stringData) {
+	if (map.has(stringData.split(",")[0])) {
+		console.log("KEY Already exists! Try with other key.");
+		return;
+	}
 	fs.appendFile(DB_PATH, stringData + "\n", function(err) {});
 	dataToHashMap(stringData);
 }
