@@ -16,9 +16,10 @@ console.log(select("1510130000001"));
 console.log(select("2507100050000"));
 console.log(select("9406201234567"));
 */
+console.log(select("911116-1000000"));
 
 //testSearchAll1();
-testSearchAll2();
+//testSearchAll2();
 //console.log(testSearchAll2());
 
 // MAIN END
